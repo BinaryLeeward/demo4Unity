@@ -6,12 +6,15 @@ public class Test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-			Net.TestClient ();
+//			Net.TestClient ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+//			Debug.Log("====U:"+Time.deltaTime);
+	}
+	void FixedUpdate () {
+//			Debug.Log(">>>>F:" + Time.deltaTime);
 	}
 }
 }

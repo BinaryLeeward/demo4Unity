@@ -11,11 +11,21 @@ public class PlayerController : MonoBehaviour {
 	public float tilt;
 	public Boundary boundary;
 
+	public GameObject shot;
+	public Transform shotSpawn;
+	public float fireRate;
+	private float nextFire;
+	void Update(){
+		if(Input.GetButton("Fire1") && Time.time > nextFire){
+			Instantiate(shot,shotSpawn.position,shotSpawn.rotation);
+			nextFire = Time.time + fireRate;
+		}
+	}
+
 	void FixedUpdate(){
 		float moveHorizontal = Input.GetAxis("Horizontal");
 		float moveVertical = Input.GetAxis("Vertical");
 		Vector3 movement = new Vector3(moveHorizontal,0.0f,moveVertical);
-		Debug.Log(rigidbody.velocity);
 		rigidbody.velocity = movement*speed;
 
 		rigidbody.position = new Vector3(
