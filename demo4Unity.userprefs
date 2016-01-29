@@ -1,12 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DestroyBoundry.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameController.cs">
     <Files>
-      <File FileName="Assets\Done\Done_Scripts\Done_PlayerController.cs" Line="47" Column="34" />
+      <File FileName="Assets\Done\Done_Scripts\Done_PlayerController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Mover.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="20" Column="60" />
-      <File FileName="Assets\Scripts\DestroyBoundry.cs" Line="6" Column="38" />
-      <File FileName="Assets\Scripts\RandomRotator.cs" Line="8" Column="17" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DestroyBoundary.cs" Line="8" Column="3" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="27" Column="39" />
+      <File FileName="Assets\Scripts\DestoryContact.cs" Line="4" Column="28" />
+      <File FileName="Assets\Scripts\RandomRotator.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
