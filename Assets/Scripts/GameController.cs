@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
 
-	public GameObject spawnObject;
+	public GameObject[] spawnObjects;
 	public Vector3 spawnValues;
 	public float waveCount;
 	public float spawnWait;
@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour {
 			for(int i=0;i<waveCount;i++){
 				Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x,spawnValues.x),spawnValues.y,spawnValues.z);
 				Quaternion spawnRotation = Quaternion.identity;
-				Instantiate(spawnObject,spawnPosition,spawnRotation);
+				Instantiate(spawnObjects[Random.Range(0,spawnObjects.Length)],spawnPosition,spawnRotation);
 				yield return new WaitForSeconds(spawnWait);
 			}
 			if(gameOver){
