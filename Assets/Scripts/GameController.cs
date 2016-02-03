@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
@@ -10,9 +11,10 @@ public class GameController : MonoBehaviour {
 	public float waveWait;
 	public float startWait;
 
-	public GUIText scoreText;
-	public GUIText gameOverText;
-	public GUIText restartText;
+	public Text scoreText;
+	public Text gameOverText;
+//	public Text restartText;
+	public Button restartButton;
 	private int score;
 	private bool gameOver;
 	private bool restart;
@@ -25,14 +27,21 @@ public class GameController : MonoBehaviour {
 		gameOver = false;
 		restart = false;
 		gameOverText.text = "";
-		restartText.text = "";
+		restartButton.gameObject.SetActive(false);
+//		restartText.text = "";
 	}
 
 	void Update(){
+//		if(restart){
+//			if(Input.GetKeyDown(KeyCode.R)){
+//				Application.LoadLevel(Application.loadedLevel);
+//			}
+//		}
+	}
+
+	public void Restart(){
 		if(restart){
-			if(Input.GetKeyDown(KeyCode.R)){
-				Application.LoadLevel(Application.loadedLevel);
-			}
+			Application.LoadLevel(Application.loadedLevel);
 		}
 	}
 
@@ -47,7 +56,8 @@ public class GameController : MonoBehaviour {
 			}
 			if(gameOver){
 				restart = true;
-				restartText.text = "Press 'R' to restart!";
+//				restartText.text = "Press 'R' to restart!";
+				restartButton.gameObject.SetActive(true);
 				break;
 			}
 			yield return new WaitForSeconds(waveWait);
