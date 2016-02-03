@@ -1,13 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Done\Done_Scripts\Done_EvasiveManeuver.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DestroyByTime.cs">
     <Files>
-      <File FileName="Assets\Scripts\WeaponController.cs" Line="9" Column="21" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="21" Column="19" />
-      <File FileName="Assets\Scripts\DestoryContact.cs" Line="17" Column="16" />
-      <File FileName="Assets\Done\Done_Scripts\Done_EvasiveManeuver.cs" Line="4" Column="34" />
-      <File FileName="Assets\Done\Done_Scripts\Done_DestroyByTime.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameController.cs" Line="13" Column="11" />
+      <File FileName="Assets\Scripts\DestroyByTime.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
